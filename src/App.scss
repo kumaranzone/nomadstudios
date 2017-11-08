@@ -1,0 +1,196 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.logo {
+    font-style: italic;
+    font-family: 'Parchment MF';
+    display: inline-block;
+    padding-top: .5rem;
+    padding-bottom: .3125rem;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: black !important;
+    margin: 0 auto !important;
+    cursor: pointer;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App {
+    margin: 0 auto;
+    transition: all 400ms ease;
+    .AppHeader {
+        background-color: white;
+        height: 70%;
+        color: white;
+        .Slider {
+            background-size: cover !important;
+            width: 80%;
+            height: 80%;
+            padding: 10%;
+        }
+    }
+    .appFooter {
+        bottom: 0;
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+/* ------------------------- RESPONSIVE STYLES ------------------------- */
+
+
+/* ----------- Desktop ----------- */
+
+@media only screen and (max-width: 767px) {
+    .App {
+        max-width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .App {
+        max-width: 100%;
+        min-height: 430px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .App {
+        max-width: 100%;
+        min-height: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .App {
+        max-width: 100%;
+        min-height: 430px;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .App {
+        max-width: 100%;
+        min-height: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .App {
+        max-width: 100%;
+        min-height: 430px;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .App {
+        max-width: 100%;
+        min-height: 375px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* ----------- iPad mini ----------- */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .App {
+        max-width: 88%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .App {
+        max-width: 90%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
