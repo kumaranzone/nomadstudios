@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
 import ImageSlider from './ImageSlider';
+import VideoPlayer from './videoSection';
 import './App.css';
  // eslint-disable-next-line
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <AppHeader/>
         <header className="intro-header">
           <ImageSlider />
+          <VideoPlayer />
         </header>
         <AppFooter />
       </div>

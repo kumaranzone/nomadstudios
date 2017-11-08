@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'GreatVibesRegular';
+    src: url('https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/GreatVibes-Regular.otf');
+}
+
 .App {
     text-align: center;
 }
@@ -7,18 +12,8 @@
     height: 80px;
 }
 
-.logo {
-    font-style: italic;
-    font-family: 'Parchment MF';
-    display: inline-block;
-    padding-top: .5rem;
-    padding-bottom: .3125rem;
-    font-size: 2rem;
-    line-height: inherit;
-    white-space: nowrap;
-    color: black !important;
-    margin: 0 auto !important;
-    cursor: pointer;
+.nav-link {
+    text-transform: uppercase;
 }
 
 .App-title {
@@ -38,20 +33,24 @@
     }
 }
 
+.logo {
+    font-style: bold;
+    font-family: 'GreatVibesRegular';
+    display: inline-block;
+    padding-top: 1.35rem;
+    padding-bottom: .3125rem;
+    font-size: 3.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: black !important;
+    margin: 0 auto !important;
+    text-transform: none !important;
+    cursor: pointer;
+}
+
 .App {
     margin: 0 auto;
     transition: all 400ms ease;
-    .AppHeader {
-        background-color: white;
-        height: 70%;
-        color: white;
-        .Slider {
-            background-size: cover !important;
-            width: 80%;
-            height: 80%;
-            padding: 10%;
-        }
-    }
     .appFooter {
         bottom: 0;
         position: static;
@@ -71,8 +70,17 @@
 @media only screen and (max-width: 767px) {
     .App {
         max-width: 100%;
-        padding-top: 90px;
-        padding-bottom: 90px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -99,8 +107,17 @@
     .App {
         max-width: 100%;
         min-height: 430px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -111,8 +128,17 @@
     .App {
         max-width: 100%;
         min-height: 400px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -126,8 +152,17 @@
     .App {
         max-width: 100%;
         min-height: 430px;
-        padding-top: 31px;
-        padding-bottom: 31px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -138,8 +173,17 @@
     .App {
         max-width: 100%;
         min-height: 400px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -153,8 +197,17 @@
     .App {
         max-width: 100%;
         min-height: 430px;
-        padding-top: 31px;
-        padding-bottom: 31px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -165,8 +218,17 @@
     .App {
         max-width: 100%;
         min-height: 375px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -179,8 +241,17 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .App {
         max-width: 88%;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }
 
@@ -190,7 +261,16 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .App {
         max-width: 90%;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        .videoSection {
+            padding: 2%;
+        }
+        .appFooter {
+            bottom: 0;
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+        }
     }
 }

@@ -16,7 +16,7 @@ class ImageSlider extends Component {
 
   render() {
     return (
-      <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div id="imageCarousel" className="carousel slide" data-ride="carousel" data-interval="4000">
         <ol className="carousel-indicators">
           <li data-target="#imageCarousel" data-slide-to="0" className="active"></li>
           <li data-target="#imageCarousel" data-slide-to="1"></li>
