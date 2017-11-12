@@ -16,7 +16,7 @@ class ImageSlider extends Component {
 
   render() {
     return (
-      <div id="imageCarousel" className="carousel slide" data-ride="carousel" data-interval="4000">
+      <div id="imageCarousel" className="carousel slide" data-ride="carousel" data-interval="10000">
         <ol className="carousel-indicators">
           <li data-target="#imageCarousel" data-slide-to="0" className="active"></li>
           <li data-target="#imageCarousel" data-slide-to="1"></li>
@@ -24,23 +24,83 @@ class ImageSlider extends Component {
         </ol>
         <div className="carousel-inner"  role="listbox">
           <div className="item active">
-            <img
-              src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/model1/1.jpg"
+              <div
+                style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/snail.jpg") no-repeat'}}
+                // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby1.jpg"
+                className="Slider"
+                />
+            </div> 
+          <div className="item">
+            <div 
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/couple-yw.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/couple-yw.jpg") no-repeat center'}}
               className="Slider"
               />
-            <div className="carousel-caption d-none d-md-block">
-              <h3>PORTRAIT</h3>
-            </div>
           </div>
           <div className="item">
-            <img
-              src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/model1/4.jpg"
+            <div
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-ly.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/new2.jpg") no-repeat center'}}
               className="Slider"
               />
-            <div className="carousel-caption d-none d-md-block">
-              <h3>PORTRAIT</h3>
-            </div>
           </div>
+          <div className="item">
+            <div
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby2.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/couple3.jpg") no-repeat center'}}
+              className="Slider"
+              />
+          </div>
+
+          <div className="item">
+            <div
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby2.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-ly.jpg") no-repeat center'}}
+              className="Slider"
+              />
+          </div>
+
+           <div className="item">
+            <div
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby2.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby2.jpg") no-repeat center'}}
+              className="Slider"
+              />
+          </div>
+
+          <div className="item">
+            <div
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/boudoir1.jpg") no-repeat center',
+            }}
+              //src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-2p.jpg"
+              className="Slider"
+              />
+          </div> 
+          <div className="item">
+            <div
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/travel1.jpg") no-repeat center',
+              }}
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-snak.jpg"
+             className="Slider"
+              />
+          </div>
+          
+          <div className="item">
+            <div
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-2p.jpg") no-repeat center',
+            }}
+              //src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/model-2p.jpg"
+              className="Slider"
+              />
+          </div> 
+          <div className="item">
+            <div
+              // src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/baby2.jpg"
+              style={{background:'url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/couple5.jpg") no-repeat center'}}
+              className="Slider"
+              />
+          </div>
+
         </div>
         <a className="left carousel-control" href="#imageCarousel" data-slide="prev">
           <span className="glyphicon glyphicon-chevron-left"></span>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-export default() => {
+export default () => {
   return (
-    <nav className="navbar navbar-light bg-dark fixed-top header">
+    <nav className="navbar navbar-default" >
       <div className="container-fluid">
         <div className="navbar-header">
           <button
@@ -16,10 +16,10 @@ export default() => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand logo" href="#">Nomad Studios</a>
+         <a className="navbar-brand logo" href="#"><span>Nomad Studios</span></a>
         </div>
         <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="nav navbar-nav navbar-right">
+          <ul className="nav navbar-nav navbar-right navBarButtons">
             <li>
                 <a className="nav-link" href="#">About</a>
             </li>

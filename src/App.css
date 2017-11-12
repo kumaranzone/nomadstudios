@@ -1,6 +1,26 @@
 @font-face {
+  font-family: 'ParchmentMF';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/Parchment MF.otf"); }
+
+@font-face {
   font-family: 'GreatVibesRegular';
   src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/GreatVibes-Regular.otf"); }
+
+@font-face {
+  font-family: 'blackjack';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/blackjack.otf"); }
+
+@font-face {
+  font-family: 'facundaitalic';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/Facunda-Italic.otf"); }
+
+@font-face {
+  font-family: 'facunda';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/Facunda.otf"); }
+
+@font-face {
+  font-family: 'SIMPLIFICATypeface';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/SIMPLIFICATypeface.ttf"); }
 
 .App {
   text-align: center; }
@@ -25,22 +45,34 @@
     transform: rotate(360deg); } }
 
 .logo {
-  font-style: bold;
-  font-family: 'GreatVibesRegular';
+  font-family: 'SIMPLIFICATypeface';
+  font-weight: bold;
+  font-style: italic;
   display: inline-block;
   padding-top: 1.35rem;
   padding-bottom: .3125rem;
   font-size: 3.5rem;
-  line-height: inherit;
+  line-height: 2rem;
   white-space: nowrap;
   color: black !important;
   margin: 0 auto !important;
-  text-transform: none !important;
+  text-transform: capitalize;
   cursor: pointer; }
+
+.navbar {
+  margin-bottom: 0 !important; }
 
 .App {
   margin: 0 auto;
   transition: all 400ms ease; }
+  .App .rotate270 {
+    transform: rotate(270deg); }
+  .App .showHideImage {
+    display: none; }
+  .App .Slider {
+    background-size: cover !important;
+    height: 80vh !important;
+    width: auto !important; }
   .App .appFooter {
     bottom: 0;
     position: static;
@@ -50,15 +82,92 @@
     background-color: white; }
 
 /* ------------------------- RESPONSIVE STYLES ------------------------- */
-/* ----------- Desktop ----------- */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
   .App {
     max-width: 100%; }
+    .App .showHideImage {
+      display: none; }
+    .App .videoSection {
+      padding: 2%; }
+    .App .Slider {
+      background-size: cover !important;
+      background-position-x: center !important;
+      height: 70vh !important;
+      width: auto !important; }
+    .App .vmenu {
+      position: absolute;
+      height: auto;
+      box-sizing: border-box;
+      z-index: 999;
+      right: 0;
+      opacity: 0.5; }
+      .App .vmenu .list-group li {
+        width: 100%; }
+      .App .vmenu .list-item-text {
+        overflow-x: hidden;
+        text-align: center;
+        position: relative;
+        padding: 1.75rem 1.75rem;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        cursor: pointer;
+        line-height: 2.5rem;
+        background-color: black;
+        color: white;
+        text-shadow: 0px 0px 1px black;
+        border-top-left-radius: 1.25rem !important;
+        border-top-right-radius: 1.25rem !important;
+        border-bottom-left-radius: 1.25rem !important;
+        border-bottom-right-radius: 1rem !important; }
+    .App .appFooter {
+      bottom: 0;
+      position: static;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: white; } }
+
+@media only screen and (min-width: 1367px) {
+  .App {
+    max-width: 100%; }
+    .App .showHideImage {
+      display: none; }
+    .App .Slider {
+      background-size: cover !important;
+      background-position-x: center !important;
+      height: 85vh !important;
+      width: auto !important; }
+    .App .vmenu {
+      position: absolute;
+      height: auto;
+      box-sizing: border-box;
+      z-index: 999;
+      right: 0;
+      opacity: 0.5; }
+      .App .vmenu .list-group li {
+        width: 100%; }
+      .App .vmenu .list-item-text {
+        overflow-x: hidden;
+        text-align: center;
+        position: relative;
+        padding: 1.75rem 1.75rem;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        cursor: pointer;
+        line-height: 2.5rem;
+        background-color: black;
+        color: white;
+        text-shadow: 0px 0px 1px black;
+        border-top-left-radius: 1.25rem !important;
+        border-top-right-radius: 1.25rem !important;
+        border-bottom-left-radius: 1.25rem !important;
+        border-bottom-right-radius: 1rem !important; }
     .App .videoSection {
       padding: 2%; }
     .App .appFooter {
       bottom: 0;
       position: static;
+      padding-bottom: 60px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -73,8 +182,14 @@
   .App {
     max-width: 100%;
     min-height: 430px; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -88,8 +203,14 @@
   .App {
     max-width: 100%;
     min-height: 400px; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -102,10 +223,20 @@
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .App {
-    max-width: 100%;
-    min-height: 430px; }
+    max-width: 100%; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .Slider {
+      background-size: cover !important;
+      height: 65vh !important;
+      width: auto !important;
+      min-height: 430px; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -117,10 +248,15 @@
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .App {
-    max-width: 100%;
-    min-height: 400px; }
+    max-width: 100%; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -133,10 +269,15 @@
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .App {
-    max-width: 100%;
-    min-height: 430px; }
+    max-width: 100%; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -148,10 +289,15 @@
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .App {
-    max-width: 100%;
-    min-height: 375px; }
+    max-width: 100%; }
+    .App .logo {
+      line-height: 2rem; }
+    .App .showHideImage {
+      display: block; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -165,8 +311,12 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .App {
     max-width: 88%; }
+    .App .showHideImage {
+      display: none; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -179,8 +329,12 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .App {
     max-width: 90%; }
+    .App .showHideImage {
+      display: none; }
     .App .videoSection {
       padding: 2%; }
+    .App .vmenu {
+      display: none; }
     .App .appFooter {
       bottom: 0;
       position: static;
@@ -188,3 +342,42 @@
       display: flex;
       justify-content: center;
       background-color: white; } }
+
+/* ----------------- iPad Pro -------------  */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .App {
+    max-width: 100%; }
+    .App .showHideImage {
+      display: none; }
+    .App .Slider {
+      background-size: cover !important;
+      background-position-x: left !important;
+      background-position-y: center !important;
+      height: 70vh !important;
+      width: auto !important; }
+    .App .vmenu {
+      position: absolute;
+      height: auto;
+      box-sizing: border-box;
+      z-index: 999;
+      right: 0;
+      opacity: 0.5; }
+      .App .vmenu .list-group li {
+        width: 100%; }
+      .App .vmenu .list-item-text {
+        overflow-x: hidden;
+        text-align: center;
+        position: relative;
+        padding: 1.75rem 1.75rem;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        cursor: pointer;
+        line-height: 2.5rem;
+        background-color: black;
+        color: white;
+        text-shadow: 0px 0px 1px black;
+        border-top-left-radius: 1.25rem !important;
+        border-top-right-radius: 1.25rem !important;
+        border-bottom-left-radius: 1.25rem !important;
+        border-bottom-right-radius: 1rem !important; } }
