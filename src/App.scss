@@ -84,6 +84,31 @@
     .showHideImage{
         display:none;
     }
+    .content-section-about{
+        background: url('https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/watch.jpg') no-repeat center;
+        background-size: cover;
+        //background:transparent;
+        font-size:large;
+        height:70vh !important;
+        padding: 10px 10px;
+        font-weight: 300;
+        color:grey;
+        line-height:3;
+        position: relative;
+        text-align: left;
+        
+        p{
+            position: absolute;
+            font-family: 'ParchmentMF';
+            font-style:oblique;
+            left:0;
+            letter-spacing: 0px;  
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px; 
+            //height:50%;
+        }
+      }
     
     .Slider{
         //background-size: 100% auto !important;
@@ -127,6 +152,11 @@
             //background-position-y: top;
             height:70vh !important;
             width:auto !important;
+        }
+        .content-section-about{
+            height:90vh !important;
+            width:100vw;
+            padding: 90px 10px;
         }
         .vmenu{
             position: absolute;
@@ -188,6 +218,11 @@
             //background-position-y: top;
             height: 85vh !important;
             width:auto !important;
+        }
+        .content-section-about{
+            height:85vh !important;
+            width:100vw;
+            padding: 100px 10px;
         }
         .vmenu{
             position: absolute;
@@ -265,6 +300,11 @@
         .showHideImage{
             display:block;
         }
+        .content-section-about{
+            height:83vh !important;
+            padding: 10px 10px;
+            font-size: small;
+        }
         //padding-top: 60px;
         .videoSection {
             padding: 2%;
@@ -292,6 +332,11 @@
         min-height: 400px;
         .logo{
             line-height: 2rem;
+        }
+        .content-section-about{
+            height:90vh !important;
+            padding: 20px 10px;
+            font-size: small;
         }
         .showHideImage{
             display:block;
@@ -324,6 +369,11 @@
         max-width: 100%;
         .logo{
             line-height: 2rem;
+        }
+        .content-section-about{
+            height:90vh !important;
+            padding: 20px 10px;
+            font-size: 15px;
         }
         
         .Slider{
@@ -361,6 +411,11 @@
         .logo{
             line-height: 2rem;
         }
+        .content-section-about{
+            height:90vh !important;
+            padding: 20px 10px;
+            font-size: 15px;
+        }
         .showHideImage{
             display:block;
         }
@@ -393,6 +448,11 @@
         .logo{
             line-height: 2rem;
         }
+        .content-section-about{
+            height:85vh !important;
+            padding: 10px 10px;
+            font-size: 16px;
+        }
         .showHideImage{
             display:block;
         }
@@ -422,6 +482,11 @@
         max-width: 100%;
         .logo{
             line-height: 2rem;
+        }
+        .content-section-about{
+            height:75vh !important;
+            padding: 20px 10px;
+            font-size: small;
         }
         .showHideImage{
             display:block;
@@ -458,6 +523,11 @@
         }
         .videoSection {
             padding: 2%;
+        }
+        .content-section-about{
+            height:75vh !important;
+            // padding: 20px 10px;
+            font-size: small;
         }
         .vmenu{
             display:none;
