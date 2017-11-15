@@ -7,6 +7,9 @@ import './App.css';
 const faceBookIcon = <FontIcon className="fa fa-facebook-official fa-3x"></FontIcon>;
 // const twitterIcon = <FontIcon className="fa fa-instagram fa-2x"></FontIcon>;
 const instagramIcon = <FontIcon className="fa fa-instagram fa-3x"></FontIcon>;
+const emailIcon = <FontIcon className="fa fa-envelope"></FontIcon>;
+
+const phoneIcon = <span><FontIcon className="fa fa-phone"></FontIcon>&nbsp;9902326052</span>;
 // const nearbyIcon = <IconLocationOn />;
 
 /**
@@ -18,6 +21,10 @@ class AppFooter extends Component {
     state = {
       selectedIndex: 0,
     };
+
+    sendEmail = () => {
+      window.location.href = "mailto:nomadstudios9@gmail.com?body=Regarding Business&subject=Contacting for business";
+    }
   
     select = (index) => this.setState({selectedIndex: index});
   
@@ -25,17 +32,17 @@ class AppFooter extends Component {
       return (
         <Paper zDepth={1} className="appFooter">
           <BottomNavigation selectedIndex={this.state.selectedIndex}>
-            {/* <BottomNavigationItem
-              icon={recentsIcon}
-              onClick={() => this.select(0)}
-            /> */}
+            <BottomNavigationItem
+              icon={emailIcon}
+              onClick={() => this.sendEmail()}
+            />
             <BottomNavigationItem
               icon={instagramIcon}
-              onClick={() => this.select(1)}
+              // onClick={(e) => {e.preventDefault(); window.open('https://www.instagram.com/ganeshk53/','_blank')}}
             />
             <BottomNavigationItem
               icon={faceBookIcon}
-              onClick={() => this.select(2)}
+              // onClick={(e) => {e.preventDefault();window.open('https://www.facebook.com/nomadstudios.RG/','_blank')}}
             />
           </BottomNavigation>
         </Paper>

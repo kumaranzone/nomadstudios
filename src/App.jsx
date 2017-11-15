@@ -5,6 +5,7 @@ import AppFooter from './AppFooter';
 
 import Home from './home';
 import About from './about';
+import Contact from './contact';
 import {
   Route,
   Link
@@ -22,6 +23,7 @@ class App extends Component {
           {this.props.children}
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
+          <Route path="/contact" component={Contact}/>
         </main>
         <AppFooter />
       </div>

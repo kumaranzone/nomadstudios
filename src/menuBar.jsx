@@ -5,7 +5,7 @@ export default class MenuBar extends React.Component {
 
   render(){
     return(
-      <div id="test" class="vmenu">
+      <div id="test" className="vmenu">
       <ul class="list-group">
 
         <li href="#item-2" onClick="window.location='detail/boudoir.html'" class="list-group-item list-item-text" data-toggle="collapse">Fashion and Boudoir</li>

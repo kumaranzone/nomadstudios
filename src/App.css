@@ -69,6 +69,21 @@
     transform: rotate(270deg); }
   .App .showHideImage {
     display: none; }
+  .App .contact-section {
+    padding: 12px;
+    font-size: 20px; }
+    .App .contact-section .card {
+      transition: 0.3s;
+      border-radius: 5px;
+      font-family: 'SIMPLIFICATypeface'; }
+    .App .contact-section .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+    .App .contact-section img {
+      background-position: center;
+      border-radius: 50%; }
+    .App .contact-section .content {
+      padding: 2px 16px;
+      width: inherit; }
   .App .content-section-about {
     background: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/slider/watch.jpg") no-repeat center;
     background-size: cover;
@@ -96,7 +111,7 @@
     width: auto !important; }
   .App .appFooter {
     bottom: 0;
-    position: static;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -146,7 +161,7 @@
         border-bottom-right-radius: 1rem !important; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -195,8 +210,8 @@
       padding: 2%; }
     .App .appFooter {
       bottom: 0;
-      position: static;
-      padding-bottom: 60px;
+      position: fixed;
+      padding-bottom: 8px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -225,7 +240,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -250,7 +265,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -280,7 +295,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -304,7 +319,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -329,7 +344,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -353,7 +368,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -375,7 +390,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -393,7 +408,7 @@
       display: none; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
