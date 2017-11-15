@@ -17,8 +17,8 @@ export default () => {
                 <div className="content">
                   <h2><b>Ganesh Krishnan</b></h2>
                   <p>JP Nagar - Bangalore</p>
-                  <p><i className="fa fa-phone" aria-hidden="true"></i> &nbsp;<b>9902326052</b></p>
-                  <p><i className="fa fa-envelope" aria-hidden="true" onClick={()=>sendEmail}></i> &nbsp; <a  onClick={(e)=>sendEmail(e)}>nomadstudios9@gmail.com</a></p>
+                  <p><i className="fa fa-phone" aria-hidden="true"></i><b>9902326052</b></p>
+                  <p><i className="fa fa-envelope" aria-hidden="true"></i><a onClick={(e)=>sendEmail(e)}>nomadstudios9@gmail.com</a></p>
                 </div>
               </div>
             </div>

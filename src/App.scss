@@ -77,7 +77,6 @@
 .App {
     margin: 0 auto;
     transition: all 400ms ease;
-   //padding-top: 60px;
 
     .rotate270{
         transform: rotate(270deg);
@@ -90,9 +89,7 @@
         font-size:20px;
         
         .card {
-            // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
             transition: 0.3s;
-           //  width: 70vw;
             border-radius: 5px;
             font-family: 'SIMPLIFICATypeface';
         }

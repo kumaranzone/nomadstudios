@@ -8,8 +8,6 @@ const faceBookIcon = <FontIcon className="fa fa-facebook-official fa-3x"></FontI
 // const twitterIcon = <FontIcon className="fa fa-instagram fa-2x"></FontIcon>;
 const instagramIcon = <FontIcon className="fa fa-instagram fa-3x"></FontIcon>;
 const emailIcon = <FontIcon className="fa fa-envelope"></FontIcon>;
-
-const phoneIcon = <span><FontIcon className="fa fa-phone"></FontIcon>&nbsp;9902326052</span>;
 // const nearbyIcon = <IconLocationOn />;
 
 /**
@@ -22,7 +20,8 @@ class AppFooter extends Component {
       selectedIndex: 0,
     };
 
-    sendEmail = () => {
+    sendEmail = (e) => {
+      e.preventDefault();
       window.location.href = "mailto:nomadstudios9@gmail.com?body=Regarding Business&subject=Contacting for business";
     }
   
@@ -34,7 +33,7 @@ class AppFooter extends Component {
           <BottomNavigation selectedIndex={this.state.selectedIndex}>
             <BottomNavigationItem
               icon={emailIcon}
-              onClick={() => this.sendEmail()}
+              onClick={(e) => this.sendEmail(e)}
             />
             <BottomNavigationItem
               icon={instagramIcon}
