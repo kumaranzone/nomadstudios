@@ -6,7 +6,9 @@ import AppFooter from './AppFooter';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
+import FashionBoudoir from './fashionBoudoir';
 import {
+  HashRouter,
   Route,
   Link
 } from 'react-router-dom';
@@ -24,6 +26,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
+          <Route path="/fashion-boudoir" component={FashionBoudoir}/>
         </main>
         <AppFooter />
       </div>
