@@ -87,7 +87,7 @@
     .App .contact-section .content {
       padding: 2px 16px;
       width: inherit; }
-  .App .btn-toolbar {
+  .App .btn-group-sm {
     display: none; }
   .App .slider-container {
     margin: 0 auto;
@@ -145,7 +145,7 @@
       height: 90vh !important;
       width: 100vw;
       padding: 90px 10px; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: none; }
     .App .vmenu {
       position: absolute;
@@ -194,7 +194,7 @@
       height: 85vh !important;
       width: 100vw;
       padding: 100px 10px; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: none; }
     .App .vmenu {
       position: absolute;
@@ -243,7 +243,7 @@
     min-height: 430px; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .showHideImage {
       display: block; }
@@ -270,7 +270,7 @@
     min-height: 400px; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -297,7 +297,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -332,7 +332,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -359,7 +359,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .content-section-about {
       height: 85vh !important;
@@ -385,7 +385,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-toolbar {
+    .App .btn-group-sm {
       display: block; }
     .App .content-section-about {
       height: 75vh !important;

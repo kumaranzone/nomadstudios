@@ -27,11 +27,11 @@ class MenuBar extends React.Component {
             
             </ul>
           </div>
-          <div class="btn-toolbar btn-group-sm" role="toolbar" aria-label="..." style={{padding: 5}}>
-            <button type="button" class="btn btn-info" onClick={(e) => this.redirectToRoute(e, '/fashion-boudoir')}>Fashion and Boudoir</button>
-            <button type="button" class="btn btn-info">Baby</button>
-            <button type="button" class="btn btn-info">Product</button>
-            <button type="button" class="btn btn-info">Pre-Wedding</button>
+          <div class="btn-group-sm" role="group" aria-label="..." style={{padding: 5}}>
+            <button type="button" class="btn btn-default" onClick={(e) => this.redirectToRoute(e, '/fashion-boudoir')}>Fashion and Boudoir</button>
+            <button type="button" class="btn btn-default">Baby</button>
+            <button type="button" class="btn btn-default">Product</button>
+            <button type="button" class="btn btn-default">Pre-Wedding</button>
             {/* <button type="button" class="btn btn-default">Travel</button> */}
         </div>
     </div>

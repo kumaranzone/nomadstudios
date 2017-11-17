@@ -24,6 +24,11 @@ class AppFooter extends Component {
       e.preventDefault();
       window.location.href = "mailto:nomadstudios9@gmail.com?body=Regarding Business&subject=Contacting for business";
     }
+
+    // openSocialMedia = (e, URL) =>{
+    //   e.preventDefault(); 
+    //   window.open(URL,'_blank');
+    // }
   
     select = (index) => this.setState({selectedIndex: index});
   
