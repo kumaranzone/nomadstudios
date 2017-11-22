@@ -6,7 +6,7 @@ import AppFooter from './AppFooter';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
-import FashionBoudoir from './fashionBoudoir';
+import MenuDetail from './menuDetail';
 import {
   HashRouter,
   Route,
@@ -26,7 +26,10 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
-          <Route path="/fashion-boudoir" component={FashionBoudoir}/>
+          <Route path="/prewedding" component={MenuDetail}/>
+          <Route path="/fashion-boudoir" component={MenuDetail}/>
+          <Route path="/baby" component={MenuDetail}/>
+          <Route path="/product" component={MenuDetail}/>
         </main>
         <AppFooter />
       </div>

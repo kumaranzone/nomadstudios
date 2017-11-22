@@ -16,22 +16,23 @@ class MenuBar extends React.Component {
 
             <li href="#item-2" onClick={(e) => this.redirectToRoute(e, '/fashion-boudoir')} className="list-group-item list-item-text" data-toggle="collapse">Fashion and Boudoir</li>
             
-            <li href="#item-1" onClick="window.location='detail/prewedding.html'" className="list-group-item list-item-text" data-toggle="collapse">Pre-wedding Photography</li>
 
-            <li href="#item-3" class="list-group-item list-item-text" data-toggle="collapse">Product Photography</li>
+            <li href="#item-3" onClick={(e) => this.redirectToRoute(e, '/product')} class="list-group-item list-item-text" data-toggle="collapse">Product Photography</li>
 
 
-            <li href="#item-6" onClick="window.location='detail/baby.html'" className="list-group-item list-item-text" data-toggle="collapse">Baby - Precious Memories</li>
+            <li href="#item-6" onClick={(e) => this.redirectToRoute(e, '/baby')} className="list-group-item list-item-text" data-toggle="collapse">Baby - Precious Memories</li>
             
+            <li href="#item-1" onClick={(e) => this.redirectToRoute(e, '/prewedding')} className="list-group-item list-item-text" data-toggle="collapse">Pre-wedding Photography</li>
+           
             <li href="#item-7" class="list-group-item list-item-text" data-toggle="collapse">Travel and Conceptual</li>
             
             </ul>
           </div>
           <div class="btn-group-sm" role="group" aria-label="..." style={{padding: 5}}>
             <button type="button" class="btn btn-default" onClick={(e) => this.redirectToRoute(e, '/fashion-boudoir')}>Fashion and Boudoir</button>
-            <button type="button" class="btn btn-default">Baby</button>
-            <button type="button" class="btn btn-default">Product</button>
-            <button type="button" class="btn btn-default">Pre-Wedding</button>
+            <button type="button" class="btn btn-default" onClick={(e) => this.redirectToRoute(e, '/baby')}>Baby</button>
+            <button type="button" class="btn btn-default" onClick={(e) => this.redirectToRoute(e, '/product')}>Product</button>
+            <button type="button" class="btn btn-default" onClick={(e) => this.redirectToRoute(e, '/prewedding')}>Pre-Wedding</button>
             {/* <button type="button" class="btn btn-default">Travel</button> */}
         </div>
     </div>

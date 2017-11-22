@@ -19,16 +19,16 @@ export default () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-         <a className="navbar-brand logo" href="/"><span>Nomad Studios</span></a>
+         <Link to="/" className="navbar-brand logo"><span>Nomad Studios</span></Link>
         </div>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="nav navbar-nav navbar-right navBarButtons">
             <li>
                 <Link className="nav-link" to="/about">About</Link>
             </li>
-            <li >
+            {/* <li >
                 <Link className="nav-link" to="#">Services</Link>
-            </li>
+            </li> */}
             <li >
                 <Link className="nav-link" to="/contact">Contact</Link>
             </li>

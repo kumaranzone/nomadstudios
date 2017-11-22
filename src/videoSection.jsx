@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
-export default () => {
+export default (props) => {
+  const {url} = props;
   return (
     <section className="content-section videoSection">
       <video
@@ -13,7 +14,7 @@ export default () => {
         height="35%"
         width="80%">
         <source
-          src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/video/baby_original.mp4"
+          src={url}
           type="video/mp4"/>
       </video>
     </section>

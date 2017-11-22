@@ -16,7 +16,7 @@ class MultiSlider extends React.Component {
     )
   }
   render(){
-    const {sliderImages1} = this.props;
+    const {sliderImages1, sliderImages2} = this.props;
    
     const settings1 = {
       //dots: true,
@@ -26,6 +26,7 @@ class MultiSlider extends React.Component {
       autoplay:true,
       autoplaySpeed: 4000,
       slidesToScroll: 1,
+      variableWidth: true,
     };
     const settings2 = {
       infinite: true,
@@ -39,6 +40,10 @@ class MultiSlider extends React.Component {
         <Slider {...settings2}>
           { this.SliderItems(sliderImages1) }
         </Slider>
+       { sliderImages2 && <Slider {...settings2}>
+        { this.SliderItems(sliderImages2) }
+        </Slider>
+       }
         {/*  <Slider {...settings1}>
           <div className="col-xs-12 col-sm-6 col-md-3">
             <a href="#"><img src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/model-1-1.jpg" alt="slide-1-img-1" className="img-responsive" /></a>
