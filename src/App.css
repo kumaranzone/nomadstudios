@@ -15,8 +15,8 @@
   src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/Facunda-Italic.otf"); }
 
 @font-face {
-  font-family: 'facunda';
-  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/Facunda.otf"); }
+  font-family: 'sunshine';
+  src: url("https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/fonts/sunshine.ttf"); }
 
 @font-face {
   font-family: 'SIMPLIFICATypeface';
@@ -48,19 +48,20 @@
     transform: rotate(360deg); } }
 
 .logo {
-  font-family: 'SIMPLIFICATypeface';
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'sunshine';
   display: inline-block;
   padding-top: 1.35rem;
   padding-bottom: .3125rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 2rem;
   white-space: nowrap;
   color: black !important;
   margin: 0 auto !important;
-  text-transform: capitalize;
+  text-transform: capitalize !important;
   cursor: pointer; }
+
+.navBar {
+  background: transparent; }
 
 .navbar {
   margin-bottom: 0 !important; }
@@ -87,7 +88,7 @@
     .App .contact-section .content {
       padding: 2px 16px;
       width: inherit; }
-  .App .btn-group-sm {
+  .App .nav-pills {
     display: none; }
   .App .slider-container {
     margin: 0 auto;
@@ -118,11 +119,11 @@
       padding: 10px; }
   .App .Slider {
     background-size: cover !important;
-    height: 80vh !important;
+    height: 100vh !important;
     width: auto !important; }
   .App .appFooter {
     bottom: 0;
-    position: fixed;
+    position: static;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -139,13 +140,13 @@
     .App .Slider {
       background-size: cover !important;
       background-position-x: center !important;
-      height: 70vh !important;
+      height: 120vh !important;
       width: auto !important; }
     .App .content-section-about {
       height: 90vh !important;
       width: 100vw;
       padding: 90px 10px; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: none; }
     .App .vmenu {
       position: absolute;
@@ -174,7 +175,7 @@
         border-bottom-right-radius: 1rem !important; }
     .App .appFooter {
       bottom: 0;
-      position: fixed;
+      position: static;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -188,13 +189,13 @@
     .App .Slider {
       background-size: cover !important;
       background-position-x: center !important;
-      height: 85vh !important;
+      height: 120vh !important;
       width: auto !important; }
     .App .content-section-about {
       height: 85vh !important;
       width: 100vw;
       padding: 100px 10px; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: none; }
     .App .vmenu {
       position: absolute;
@@ -225,7 +226,7 @@
       padding: 2%; }
     .App .appFooter {
       bottom: 0;
-      position: fixed;
+      position: static;
       padding-bottom: 8px;
       width: 100%;
       display: flex;
@@ -243,7 +244,7 @@
     min-height: 430px; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .showHideImage {
       display: block; }
@@ -270,7 +271,7 @@
     min-height: 400px; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -297,7 +298,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -332,7 +333,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .content-section-about {
       height: 90vh !important;
@@ -359,7 +360,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .content-section-about {
       height: 85vh !important;
@@ -385,7 +386,7 @@
     max-width: 100%; }
     .App .logo {
       line-height: 2rem; }
-    .App .btn-group-sm {
+    .App .nav-pills {
       display: block; }
     .App .content-section-about {
       height: 75vh !important;

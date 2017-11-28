@@ -11,7 +11,7 @@ class MultiSlider extends React.Component {
     if (!sliderImages) return;
     return sliderImages.map((src)=>
       <div>
-        <a href="#"><img src={src} alt="slide-1-img-3" className="img-responsive" /></a>
+        <a href="#"><img src={src} alt="slide-1-img-3" className="img-responsive sliderHeight" /></a>
       </div>
     )
   }
@@ -25,8 +25,9 @@ class MultiSlider extends React.Component {
       slidesToShow: 2,
       autoplay:true,
       autoplaySpeed: 4000,
-      slidesToScroll: 1,
-      variableWidth: true,
+      slidesToScroll: 2,
+     // variableWidth: true,
+      adaptiveHeight: false,
     };
     const settings2 = {
       infinite: true,
@@ -34,6 +35,9 @@ class MultiSlider extends React.Component {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
+      adaptiveHeight: false,
+      waitForAnimate:true,
+     
     };
     return (
       <div className="slider-container">

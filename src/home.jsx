@@ -8,7 +8,7 @@ export default () => {
     <div>
       <MenuBar />
       <ImageSlider />
-      <VideoPlayer url="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/video/baby.mp4" /> 
+      <VideoPlayer url="https://www.youtube.com/embed/BN4e9uaE9b0" /> 
     </div>
   )
 }

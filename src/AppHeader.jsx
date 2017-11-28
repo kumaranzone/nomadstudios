@@ -5,7 +5,7 @@ import {
 import './App.scss';
 export default () => {
   return (
-    <nav className="navbar navbar-default" >
+    <nav className="navbar navbar-default navBar" >
       <div className="container-fluid">
         <div className="navbar-header">
           <button
