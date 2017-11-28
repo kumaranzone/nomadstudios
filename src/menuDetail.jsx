@@ -7,6 +7,11 @@ const preWeddingImages = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple2.jpg',
 ]
 
+const preWeddingImages1 = [
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple21.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple4.jpg',
+]
+
 const fashionBoudoirImages = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A8013.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A8025.jpg',
@@ -17,6 +22,7 @@ const fashionBoudoirImages = [
 ]
 
 const fashionBoudoirImages1 = [
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6857.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6568.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6614.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6625.jpg',
@@ -52,7 +58,7 @@ const getImagesForSlider = (props) => {
   const route = pathname.split('/')[1];
   switch (route) {
     case 'prewedding':
-      return { images: preWeddingImages, video:'https://www.youtube.com/embed/5zLLBCNBDV4'}
+      return { images: preWeddingImages, images1:preWeddingImages1, video:'https://www.youtube.com/embed/5zLLBCNBDV4'}
       break;
     case 'fashion-boudoir':
       return { images: fashionBoudoirImages, images1: fashionBoudoirImages1, video:'https://www.youtube.com/embed/Uq3_1EIMV9U'}

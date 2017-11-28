@@ -19,15 +19,12 @@ class MultiSlider extends React.Component {
     const {sliderImages1, sliderImages2} = this.props;
    
     const settings1 = {
-      //dots: true,
-      //speed: 500,
       infinite: true,
       slidesToShow: 2,
       autoplay:true,
       autoplaySpeed: 4000,
       slidesToScroll: 2,
-     // variableWidth: true,
-      adaptiveHeight: false,
+      waitForAnimate:true,
     };
     const settings2 = {
       infinite: true,
@@ -35,7 +32,6 @@ class MultiSlider extends React.Component {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
-      adaptiveHeight: false,
       waitForAnimate:true,
      
     };

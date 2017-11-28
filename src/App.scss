@@ -76,6 +76,42 @@
     cursor: pointer;
 }
 
+.screen-flow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.screen-flow div {
+    color: white;
+}
+
+.screen-flow:before,
+.screen-flow:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 20px;
+    background-repeat: repeat-y;
+    background-size: 100% 20px;
+}
+
+.screen-flow:before {
+    background-image: -moz-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), -moz-linear-gradient(left, black 10px, rgba(0, 0, 0, 0) 10px);
+    background-image: -webkit-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), -webkit-linear-gradient(left, black 10px, rgba(0, 0, 0, 0) 10px);
+    left: -20px;
+}
+
+.screen-flow:after {
+    background-image: -moz-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), -moz-linear-gradient(right, black 10px, rgba(0, 0, 0, 0) 10px);
+    background-image: -webkit-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), -webkit-linear-gradient(right, black 10px, rgba(0, 0, 0, 0) 10px);
+    right: -20px;
+}
+
 .navBar {
     background: transparent;
 }
@@ -181,6 +217,10 @@
         .videoSection {
             padding: 2%;
         }
+        .sliderHeight {
+            height: 85vh !important;
+            width: 37vw !important;
+        }
         .Slider {
             background-size: cover !important;
             //background-size: 100% auto !important;
@@ -246,6 +286,10 @@
         max-width: 100%;
         .showHideImage {
             display: none;
+        }
+        .sliderHeight {
+            height: 75vh !important;
+            width: 40vw !important;
         }
         .Slider {
             background-size: cover !important;
@@ -348,6 +392,10 @@
             padding: 10px 10px;
             font-size: small;
         }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 37vw !important;
+        }
         //padding-top: 60px;
         .videoSection {
             padding: 2%;
@@ -383,6 +431,10 @@
             height: 90vh !important;
             padding: 20px 10px;
             font-size: small;
+        }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 37vw !important;
         }
         .showHideImage {
             display: block;
@@ -424,9 +476,13 @@
             padding: 20px 10px;
             font-size: 15px;
         }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 47vw !important;
+        }
         .slider-container {
-            width: 80vw;
-            height: 60vh !important;
+            width: 100vw;
+            // height: 60vh !important;
             color: #333;
             // background: #419be0;
         }
@@ -467,6 +523,10 @@
         }
         .nav-pills {
             display: block;
+        }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 44vw !important;
         }
         .content-section-about {
             height: 90vh !important;
@@ -513,6 +573,10 @@
             padding: 10px 10px;
             font-size: 16px;
         }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 47vw !important;
+        }
         .showHideImage {
             display: block;
         }
@@ -550,6 +614,10 @@
             height: 75vh !important;
             padding: 20px 10px;
             font-size: small;
+        }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 47vw !important;
         }
         .showHideImage {
             display: block;
@@ -592,6 +660,10 @@
             // padding: 20px 10px;
             font-size: small;
         }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 44vw !important;
+        }
         // .vmenu{
         //     display:none;
         // }
@@ -620,6 +692,10 @@
         }
         .vmenu {
             display: none;
+        }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 40vw !important;
         }
         .appFooter {
             bottom: 0;
@@ -651,6 +727,10 @@
             background-position-y: center !important;
             height: 70vh !important;
             width: auto !important;
+        }
+        .sliderHeight {
+            height: 30vh !important;
+            width: 37vw !important;
         }
         .vmenu {
             position: absolute;
