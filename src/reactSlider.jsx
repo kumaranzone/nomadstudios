@@ -11,7 +11,7 @@ class MultiSlider extends React.Component {
     if (!sliderImages) return;
     return sliderImages.map((src)=>
       <div>
-        <a href="#"><img src={src} alt="slide-1-img-3" className="img-responsive sliderHeight" /></a>
+        <img src={src} alt="slide-1-img-3" className="img-responsive sliderHeight" />
       </div>
     )
   }
@@ -28,20 +28,17 @@ class MultiSlider extends React.Component {
     };
     const settings2 = {
       infinite: true,
-      slidesToShow: 2,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1000,
       waitForAnimate:true,
-     
+      dots:false,
     };
     return (
-      <div className="slider-container">
-        <Slider {...settings2}>
-          { this.SliderItems(sliderImages1) }
-        </Slider>
-       { sliderImages2 && <Slider {...settings2}>
-        { this.SliderItems(sliderImages2) }
+      <div className="slider-container screen-flow" style={{margin: '0 auto', float: 'initial'}}>
+       { sliderImages1 && <Slider {...settings2}>
+        { this.SliderItems(sliderImages1) }
         </Slider>
        }
         {/*  <Slider {...settings1}>

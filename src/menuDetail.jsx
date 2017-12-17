@@ -3,13 +3,15 @@ import MultiSlider from './reactSlider';
 import VideoPlayer from './videoSection';
 
 const preWeddingImages = [
-  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple1.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple4.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple2.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple21.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple1.jpg',
 ]
 
 const preWeddingImages1 = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple21.jpg',
-  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple4.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/wedding/couple1.jpg',
 ]
 
 const fashionBoudoirImages = [
@@ -18,6 +20,10 @@ const fashionBoudoirImages = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/model-2-1.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/model-2-2.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/model-2-3.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6857.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6568.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6614.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6625.jpg',
   
 ]
 
@@ -32,6 +38,8 @@ const babyImages = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/1.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/3.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/4.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/3.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/4.jpg',
 ]
 const babyImages1 = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/baby/3.jpg',
@@ -43,6 +51,11 @@ const productImages1 = [
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A6701.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A6704.jpg',
   'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A8102.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6897.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/boudoir/1I1A6897-2.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A7124.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A7151.jpg',
+  'https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/menu/product/1I1A7165.jpg',
 ]
 
 const productImages = [
@@ -73,9 +86,17 @@ const getImagesForSlider = (props) => {
 export default (props) => {
   const items = getImagesForSlider(props);
   return (
-    <div className="col-md-12">
-      <MultiSlider sliderImages1={items.images} sliderImages2={items.images1 ? items.images1 : null } />
-      <VideoPlayer url={items.video} /> 
+    <div className="col-md-12 col-sm-10">
+      <div className="row">
+        <div className="col-md-12">
+          <MultiSlider sliderImages1={items.images} sliderImages2={items.images1 ? items.images1 : null } />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6" style={{margin: '0 auto', float: 'initial'}}>
+          <VideoPlayer url={items.video} />
+        </div>
+      </div>
     </div>
   )
 }

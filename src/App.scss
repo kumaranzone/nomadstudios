@@ -79,7 +79,6 @@
 .screen-flow {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    width: calc(100% - 40px);
     margin: 0 auto;
     padding: 1rem
 }
@@ -197,7 +196,7 @@
     }
     .appFooter {
         bottom: 0;
-        position: static;
+        position: fixed;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -218,8 +217,8 @@
             padding: 2%;
         }
         .sliderHeight {
-            height: 85vh !important;
-            width: 37vw !important;
+            height: 45vh !important;
+            width: auto !important;
         }
         .Slider {
             background-size: cover !important;
@@ -272,7 +271,7 @@
         }
         .appFooter {
             bottom: 0;
-            position: static;
+            position: fixed;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -288,8 +287,7 @@
             display: none;
         }
         .sliderHeight {
-            height: 75vh !important;
-            width: 40vw !important;
+            height: 25vh !important;
         }
         .Slider {
             background-size: cover !important;
@@ -345,7 +343,7 @@
         }
         .appFooter {
             bottom: 0;
-            position: static;
+            position: fixed;
             padding-bottom: 8px;
             width: 100%;
             display: flex;

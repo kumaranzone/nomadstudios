@@ -1,28 +1,45 @@
 import React from 'react';
 import FontIcon from 'material-ui/FontIcon';
+import FB from './FB';
 import './App.scss';
 
 const sendEmail = (e) => {
   e.preventDefault();
-  window.location.href = "mailto:nomadstudios9@gmail.com?body=Regarding Business&subject=Contacting for business";
+  window.location.href = "mailto:nomadstudios9@gmail.com?body=Regarding Business&subject=Contacting for bu" +
+      "siness";
 }
-export default () => {
+export default() => {
   return (
-      <div className="container">
-        <div className="row">
-            <div className="contact-section">
-              <div className="card">
-               <p>For Business related queries, please contact</p>
-                <img src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/ganesh.jpg" alt="Avatar" />
-                <div className="content">
-                  <h2><b>Ganesh Krishnan</b></h2>
-                  <p>JP Nagar - Bangalore</p>
-                  <p><i className="fa fa-phone" aria-hidden="true"></i><b>9902326052</b></p>
-                  <p><i className="fa fa-envelope" aria-hidden="true"></i><a onClick={(e)=>sendEmail(e)}>nomadstudios9@gmail.com</a></p>
-                </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-4">
+          <div className="contact-section">
+            <div className="card">
+              <p>For Business related queries, please contact</p>
+              {/* <img src="https://s3-us-west-1.amazonaws.com/www.nomadstudios.in/img/ganesh.jpg" alt="Avatar" /> */}
+              <div className="content">
+                <h2>
+                  <b>Ganesh Krishnan</b>
+                </h2>
+                <p>JP Nagar - Bangalore</p>
+                <p>
+                  <i className="fa fa-phone" aria-hidden="true"></i>
+                  <b>9902326052</b>
+                </p>
+                <p>
+                  <i className="fa fa-envelope" aria-hidden="true"></i>
+                  <a onClick={(e) => sendEmail(e)}>nomadstudios9@gmail.com</a>
+                </p>
               </div>
             </div>
+
+          </div>
+        </div>
+
+        <div className="col-md-8">
+         <FB />
         </div>
       </div>
+    </div>
   )
 }

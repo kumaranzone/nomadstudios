@@ -63,7 +63,6 @@
 .screen-flow {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  width: calc(100% - 40px);
   margin: 0 auto;
   padding: 1rem; }
 
@@ -154,7 +153,7 @@
     width: auto !important; }
   .App .appFooter {
     bottom: 0;
-    position: static;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -169,8 +168,8 @@
     .App .videoSection {
       padding: 2%; }
     .App .sliderHeight {
-      height: 85vh !important;
-      width: 37vw !important; }
+      height: 45vh !important;
+      width: auto !important; }
     .App .Slider {
       background-size: cover !important;
       background-position-x: center !important;
@@ -209,7 +208,7 @@
         border-bottom-right-radius: 1rem !important; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -221,8 +220,7 @@
     .App .showHideImage {
       display: none; }
     .App .sliderHeight {
-      height: 75vh !important;
-      width: 40vw !important; }
+      height: 25vh !important; }
     .App .Slider {
       background-size: cover !important;
       background-position-x: center !important;
@@ -263,7 +261,7 @@
       padding: 2%; }
     .App .appFooter {
       bottom: 0;
-      position: static;
+      position: fixed;
       padding-bottom: 8px;
       width: 100%;
       display: flex;

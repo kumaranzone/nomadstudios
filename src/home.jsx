@@ -8,7 +8,7 @@ export default () => {
     <div>
       <MenuBar />
       <ImageSlider />
-      <VideoPlayer url="https://www.youtube.com/embed/BN4e9uaE9b0" /> 
+      <div className="col-md-6" style={{margin: '0 auto', float: 'initial'}}><VideoPlayer url="https://www.youtube.com/embed/BN4e9uaE9b0" /></div>
     </div>
   )
 }
